@@ -7,7 +7,6 @@ import { addLight3 } from './addLight'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import Model from './Model'
 import{gsap} from "gsap"
-import { rotate } from 'three/examples/jsm/nodes/Nodes.js'
 import { addMesh1, addMesh2, addMesh3, addMesh4, addMesh5, addMesh6, addMesh7, addMesh8, addMesh9, addMesh10, addMesh11, addMesh12, addMesh13, addMesh14 } from './addmeshes'
 
 const mixers = []
