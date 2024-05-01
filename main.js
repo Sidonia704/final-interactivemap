@@ -1027,3 +1027,7 @@ function revealText(text) {
     textContainer.style.display = 'block';
 }
 
+//Really, I don't have time to organize the code, 
+//so that's it, I know it's very childish to write like that, 
+//but the model alone is a headache, at least it runs and is smooth.
+
