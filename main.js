@@ -243,10 +243,10 @@ riven.rotation = new THREE.Euler(0, -rotationAngle, 0);
 
 const doomm = new Model({
 	name: 'doomm',
-	url:'/mountaindoom.glb',
+	url:'/dom.glb',
 	scene: scene,
 	meshes: meshes, 
-	scale: new THREE.Vector3(0.4,0.6,0.4),
+	scale: new THREE.Vector3(0.4,0.4,0.4),
 	position: new THREE.Vector3(19, 0.6, -25),
 	replace: false,
 	animationState: true,
