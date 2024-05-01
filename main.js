@@ -30,7 +30,6 @@ init()
 clock.start()
 
 function init(){
-  showLoadingScreen();
   setTimeout(hideLoadingScreen, 1000);
   renderer.setSize(window.innerWidth, window.innerHeight)
   document.body.appendChild(renderer.domElement)
