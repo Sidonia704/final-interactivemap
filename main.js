@@ -28,12 +28,14 @@ const meshes = {}
 const clock = new THREE.Clock()
 
 init()
+clock.start()
+
 function init(){
-
-
+  showLoadingScreen();
+  setTimeout(hideLoadingScreen, 1000);
   renderer.setSize(window.innerWidth, window.innerHeight)
   document.body.appendChild(renderer.domElement)
-  //meshes
+
   meshes.default = addBoilerPlateMesh()
   meshes.mesh1 = addMesh1()
   meshes.mesh2 = addMesh2()
@@ -1027,7 +1029,14 @@ function revealText(text) {
     textContainer.style.display = 'block';
 }
 
+function showLoadingScreen() {
+    document.getElementById('loading-screen').style.display = 'flex';
+}
+
+function hideLoadingScreen() {
+    document.getElementById('loading-screen').style.display = 'none';
+}
+
 //Really, I don't have time to organize the code, 
 //so that's it, I know it's very childish to write like that, 
 //but the model alone is a headache, at least it runs and is smooth.
-
